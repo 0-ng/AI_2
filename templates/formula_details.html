@@ -1,0 +1,9 @@
+{% for formula in formulas %}
+<div class="list-text" style="white-space: pre;">{{ formula.id }}
+    算术置信度: {{ formula.confidence }}
+    X坐标: {{ formula.x }}     Y坐标: {{ formula.y }}
+    宽度: {{ formula.width }}      高度: {{ formula.height }}
+    算术: {{ formula.text }}
+    错误     正确答案: {{ formula.real_result }}
+</div>
+{% endfor %}

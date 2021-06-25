@@ -1,0 +1,7 @@
+{% for sentence in sentences %}
+<div class="list-text" style="white-space: pre;">{{ sentence.id }}
+        recog_str: {{ sentence.recog_str }}
+        check: {{ sentence.check }}
+        detect_box: {{ sentence.detect_box }}
+</div>
+{% endfor %}
